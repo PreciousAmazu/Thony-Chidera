@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    z-index: 1001;
+}
+
+/* navbar */
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#side-nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+#side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side-nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+#side-nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.close-btn {
+    font-size: 36px;
+    cursor: pointer;
+    padding: 15px;
+    color: #fff;
+    background-color: #333;
+    text-align: right;
+}
+
+/* Main content */
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+/* Hero */
+.hero {
+    background-image: url('./images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* align-content: center; */
+}
+
+.content {
+    overflow-y: auto;
+    height: 100vh;
+    background-color: #fffaf2;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Home */
+.home{
+    background-image: url('./images/WhatsApp\ Image\ 2024-09-06\ at\ 11.24.11_2c8c1851.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 150vh;
+}
+
+/* RSVP */
+.rsvp {
+    height: 100vh;
+    padding: 20px;
+    background-color: #fffaf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rsvp h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rsvp p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #ffbd9b;
+    outline: none;
+}
+
+#button[type="submit"] {
+    background-color: #ffbd9b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#button[type="submit"]:hover {
+    background-color: #f09266;
+}
+
+/* Travel */
+.travel {
+    background-color: #fffaf2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.travel h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.travel p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.travel-option {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.travel-option h3 {
+    font-size: 1.8rem;
+    color: #ffbd9b;
+    margin-bottom: 10px;
+}
+
+.travel-option p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    
+}
+
+
+/* Accomodation */
+.accommodation {
+    padding: 50px 20px;
+    background-color: #fffaf2;
+    text-align: center;
+}
+
+.accommodation h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.accommodation p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.hotels-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hotel-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: translateY(-10px);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel-details {
+    padding: 20px;
+}
+
+.hotel-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hotel-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.hotel-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffbd9b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hotel-details a:hover {
+    background-color: #f09266;
+}
+
+/* Registry Section */
+.registry {
+    background-color: #fffaf2;
+    padding: 50px;
+    text-align: center;
+}
+
+.registry h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.registry p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Cash Fund & Wise Transfer */
+.cash-fund, .wise-transfer {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cash-fund h3, .wise-transfer h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cash-fund p, .wise-transfer p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ffbd9b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f09266;
+}
+
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: block; /* Change to block layout so elements stack vertically */
+    }
+
+    .hero {
+        width: 100%; /* Full width for hero section */
+        min-height: 100vh; /* Full height for hero section */
+    }
+
+    .home {
+        width: 100%; /* Full width for hero section */
+        min-height: 120vh; /* Full height for hero section */
+    }
+
+    .hotels-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-card {
+        max-width: 100%;
+    }
+
+    .travel h2 {
+        font-size: 2rem;
+    }
+
+    .travel-option h3 {
+        font-size: 1.6rem;
+    }
+
+    .travel p, .travel-option p {
+        font-size: 1rem;
+    }
+}
