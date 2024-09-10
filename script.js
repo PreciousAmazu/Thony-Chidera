@@ -1,3 +1,4 @@
+// Nav toggle
 function toggleNav() {
     var nav = document.getElementById("side-nav");
     if (nav.style.left === "-250px") {
@@ -7,6 +8,7 @@ function toggleNav() {
     }
 }
 
+// Hero image change
 let currentImageIndex = 0;
 const images = [
     './images/image2.jpg',
@@ -22,6 +24,7 @@ function changeHeroImage() {
 
 setInterval(changeHeroImage, 15000);
 
+// EmailJS
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -34,11 +37,14 @@ document.getElementById('form')
     const templateID = 'template_e10bs9s';
 
     emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
+    .then(() => {
+      btn.value = 'Sent';
+      setTimeout(() => {
         btn.value = 'Send Email';
-        alert('Sent!');
-      }, (err) => {
-        btn.value = 'Send Email';
-        alert(JSON.stringify(err));
-      });
-  });
+      }, 2000);
+      this.reset();
+    }, (err) => {
+      btn.value = 'Send Email';
+      console.log(JSON.stringify(err));
+    });
+});

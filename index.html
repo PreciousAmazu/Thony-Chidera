@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <div class="menu-toggle" onclick="toggleNav()">&#9776;</div>
         <nav id="side-nav">
@@ -24,7 +25,6 @@
     </header>
 
     <div class="main">
-
         <!-- Hero Section -->
         <div class="hero">
             <div>
@@ -36,7 +36,6 @@
         
         
         <div class="content">
-
             <section id="home" class="home"> 
             </section>
             <!-- RSVP -->
@@ -49,12 +48,21 @@
                 
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required><br><br>
-                
+
+                    <label for="phone">Phone:</label>
+                    <input type="phone" name="phone" id="phone" required><br><br>
+
                     <label for="attendance">Will you be attending?</label>
                     <select id="attendance" name="attendance" required>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select><br><br>
+
+                    <label for="plusone">Number of Children/ +1 attending</label>
+                    <input type="text" name="plusone" id="plusone">
+
+                    <label for="diet">Dietry Requirements</label>
+                    <input type="text" name="diet" id="diet">
 
                     <input type="submit" id="button" value="Send Email">
                 </form>
@@ -67,8 +75,8 @@
                 <p>Below are travel options to help you reach the wedding venue:</p>
             
                 <div class="travel-option">
-                    <h3>From the Airport</h3>
-                    <p>The closest airport is Sam Mbakwe International Cargo Airport (Owerri), approximately 45 minutes from Aba. You can take a taxi or use a ride-sharing service to reach your accommodation or the wedding venue.</p>
+                    <h3> Getting In</h3>
+                    <p> For people coming from abroad  we recommend flying into Muhammed International Airport Ikeja, Lagos. Then Sam Mbakwe International Cargo Airport (Owerri), approximately 45 minutes from Aba. You can take a taxi or use a ride-sharing service to reach your accommodation or the wedding venue.</p>
                 </div>
             
                 <div class="travel-option">
@@ -92,6 +100,7 @@
                                 <p>8 Margaret Avenue G.R.A P.O. Box 148. Aba Abia state</p>
                                 <p>Phone: +2348138785186, +2348080226772</p>
                                 <p>Email: <a href="mailto:info@enitonahotel.com">info@enitonahotel.com</a></p>
+                                <p>Website: <a href="https://www.enitonahotel.com">enitonahotel.com</a></p>
                             </div>
                         </div>
                         
@@ -101,6 +110,7 @@
                                 <p>Margaret Avenue GRA Old European Quarters, Aba, Abia State, Nigeria</p>
                                 <p>Phone: +2348085985813, +2349063228435</p>
                                 <p>Email: <a href="mailto:reservations@hoteldugolf.org">reservations@hoteldugolf.org</a></p>
+                                <p>Website: <a href="https://www.hoteldugolf.org/">hoteldugolf.org</a></p>
                             </div>
                         </div>
                     </div>
@@ -115,8 +125,9 @@
                     <!-- Cash Fund Section -->
                     <div class="cash-fund">
                         <h3>Cash Fund</h3>
-                        <p>Account Number: <strong>1234567890</strong></p>
-                        <p>Bank: XYZ Bank</p>
+                        <p>Account Name: <strong>Anthony Adeboye</strong></p>
+                        <p>Account Number: <strong>0461408323</strong></p>
+                        <p>Bank: Guaranty Trust Bank (GTB)</p>
                         <p>Thank you for your generosity!</p>
                     </div>
                 
@@ -124,7 +135,14 @@
                     <div class="wise-transfer">
                         <h3>Wise Transfer</h3>
                         <p>If you'd like to contribute via Wise, please use the link below:</p>
-                        <a href="https://wise.com/transfer-link" target="_blank">Send through Wise</a>
+                        <a href="https://wise.com/pay/me/chideraa5" target="_blank">Send through Wise</a>
+                    </div>
+
+                    <!-- Paypal Transfer Section -->
+                    <div class="paypal-transfer">
+                        <h3>Paypal Transfer</h3>
+                        <p>If you'd like to contribute via Paypal, please use the link below:</p>
+                        <a href="https://paypal.me/ChideraWinifred?country.x=DE&locale.x=en_US" target="_blank">Send through Paypal</a>
                     </div>
                 </section>
                 
@@ -141,21 +159,22 @@
                     <h3>Are children welcome?</h3>
                     <p>Yes, children are welcome to join us.</p>
                 </div>
-                <!-- Add more Q&A items as needed -->
             </section>
         
+            <!-- Footer -->
             <footer>
-                <p>&copy; 2024 Tony & Chidera's Wedding. All rights reserved.</p>
+                <p>&copy; 2024 Thony & Chidera's Wedding. All rights reserved.</p>
             </footer>
         </div>
 
     </div>
 
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    emailjs.init('gF1bW2nEl9NlRzH79')
-  </script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('gF1bW2nEl9NlRzH79')
+    </script>
 </body>
 </html>

@@ -118,7 +118,7 @@ section {
 /* RSVP */
 .rsvp {
     height: 100vh;
-    padding: 20px;
+    padding: 40px;
     background-color: #fffaf2;
     display: flex;
     justify-content: center;
@@ -158,6 +158,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="phone"],
 select {
     width: 100%;
     padding: 10px;
@@ -170,13 +171,14 @@ select {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="phone"]:focus,
 select:focus {
     border-color: #ffbd9b;
     outline: none;
 }
 
 #button[type="submit"] {
-    background-color: #ffbd9b;
+    background-color: #8d98ad;
     color: white;
     padding: 12px;
     border: none;
@@ -188,7 +190,7 @@ select:focus {
 }
 
 #button[type="submit"]:hover {
-    background-color: #f09266;
+    background-color: #8d98ad;
 }
 
 /* Travel */
@@ -223,7 +225,7 @@ select:focus {
 
 .travel-option h3 {
     font-size: 1.8rem;
-    color: #ffbd9b;
+    color: #8d98ad;
     margin-bottom: 10px;
 }
 
@@ -293,7 +295,7 @@ select:focus {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #ffbd9b;
+    background-color: #8d98ad;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -301,7 +303,7 @@ select:focus {
 }
 
 .hotel-details a:hover {
-    background-color: #f09266;
+    background-color: #8d98ad;
 }
 
 /* Registry Section */
@@ -324,7 +326,7 @@ select:focus {
 }
 
 /* Cash Fund & Wise Transfer */
-.cash-fund, .wise-transfer {
+.cash-fund, .wise-transfer, .paypal-transfer {
     background-color: #fff;
     padding: 30px;
     margin: 20px auto;
@@ -333,27 +335,27 @@ select:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cash-fund h3, .wise-transfer h3 {
+.cash-fund h3, .wise-transfer h3, .paypal-transfer h3 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-.cash-fund p, .wise-transfer p {
+.cash-fund p, .wise-transfer p, .paypal-transfer p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
 }
 
 a {
-    color: #ffbd9b;
+    color: #8d98ad;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #f09266;
+    color: #8d98ad;
 }
 
 
@@ -363,7 +365,6 @@ footer {
 
 /* General styles for smaller screens */
 @media (max-width: 1200px) {
-    /* Main layout: stack columns vertically on smaller screens */
     .main {
         display: block;
     }
@@ -407,6 +408,7 @@ footer {
     /* Input fields */
     input[type="text"],
     input[type="email"],
+    input[type="phone"],
     select {
         padding: 8px;
         font-size: 14px;
@@ -464,13 +466,13 @@ footer {
     }
 
     /* Adjust for cash fund and wise transfer boxes */
-    .cash-fund, .wise-transfer {
+    .cash-fund, .wise-transfer, .paypal-transfer {
         padding: 15px;
         margin: 15px auto;
         max-width: 90%;
     }
 
-    .cash-fund h3, .wise-transfer h3 {
+    .cash-fund h3, .wise-transfer h3, .paypal-transfer h3 {
         font-size: 1.5rem;
     }
 }
@@ -509,6 +511,7 @@ footer {
     /* Form fields */
     input[type="text"],
     input[type="email"],
+    input[type="phone"],
     select {
         font-size: 12px;
         padding: 6px;
@@ -563,6 +566,7 @@ footer {
 
     input[type="text"],
     input[type="email"],
+    input[type="phone"],
     select {
         font-size: 10px;
         padding: 5px;
