@@ -11,7 +11,6 @@ function toggleNav() {
 // Hero image change
 let currentImageIndex = 0;
 const images = [
-    './images/image2.jpg',
     './images/image3.jpg',
     './images/image4.jpg'
 ];
